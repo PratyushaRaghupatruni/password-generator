@@ -83,7 +83,7 @@ var s=''
 document.getElementById("password").innerHTML=pwd;
 }
 
-function copyClipboard{
+function copyClipboard(){
     var copypwd = document.getElementById("password"); 
   
   /* Select the text field */
@@ -95,4 +95,3 @@ function copyClipboard{
   /* Alert the copied text */
   alert("Copied the text: " + copypwd.value); 
 }  
-}
