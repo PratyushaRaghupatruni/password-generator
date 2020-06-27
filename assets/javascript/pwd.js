@@ -66,32 +66,33 @@ else if(length > 6 || length < 56 ) {
 
 console.log(temp);
 
-var s=''
+var s="";
   function shuffle(s) {
-    var arr = temp.split('');           // Convert String to array
+    var arr = temp.split("");           // Convert String to array
     for(var i=0 ; i< arr.length ;i++) {
-      var password =arr[Math.floor(Math.random() * arr.length)]; 
+      var password = arr[Math.floor(Math.random() * arr.length)]; 
            s=password+s; // Get random of [0, n-1] 
     }
     
-   s = arr.join('');                // Convert Array to string
+   s = arr.join("");                // Convert Array to string
     return s;                        // Return shuffled string
   }
 
    var pwd = shuffle(s);
-  console.log(pwd);
-document.getElementById("password").innerHTML=pwd;
+  console.log(pwd); 
+  
+document.getElementById("pwd").innerHTML=pwd;
 }
 
 function copyClipboard(){
-    var copypwd = document.getElementById("password"); 
+    var copypwd = document.querySelector("h4");
   
-  /* Select the text field */
-  copypwd.select(); 
+    /* Select the text field */
+    copypwd.select();
   
-  /* Copy the text inside the text field */
-  document.execCommand("copy"); 
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
   
-  /* Alert the copied text */
-  alert("Copied the text: " + copypwd.value); 
-}  
+    /* Alert the copied text */
+    alert("Copied the text: " + copypwd.value);
+  }
