@@ -44,25 +44,23 @@ function generatePassword() {
     if (possibleChar.length === 0) {
         alert("you should enter atleast 1 type of characters");
     }
-    else {
+ 
         for (var i = 0; i < length; i++) {
             var getRandom = Math.floor(Math.random() * possibleChar.length);
             resultPassword = resultPassword + getRandom[possibleChar];
         }
         console.log(resultPassword);
-    }
+    
     document.getElementById("pwd").innerHTML = resultPassword;
 }
 
 function copyClipboard() {
-    var copypwd = document.querySelector("h4");
+  document.querySelector("h4").select();
 
-    /* Select the text field */
-    copypwd.select();
 
     /* Copy the text inside the text field */
     document.execCommand("copy");
 
     /* Alert the copied text */
-    alert("Copied the text: " + copypwd.value);
+    alert("Copied the text: " );
 }
