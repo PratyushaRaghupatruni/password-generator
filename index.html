@@ -13,12 +13,12 @@
   <div class ="container">
               <h1 class="title">Password Generator</h1>
               <h2 class="heading2">Generate Password</h2>
-              <input type="text" id="pwd" name="pwd" value="secure password"><br>
+              <input type="text" readonly id="pwd" placeholder="secure password"><br>
                <!--created a button to generate a password-->
                <div class="buttons" >
-              <input type="button" class ="button1" onclick="myFunction1()" value="Generate password">
+              <input type="button" id="password" class ="button1" onclick="generatePassword()" value="Generate password">
               <!--created a button to generate a copy to clipboard-->
-              <input type="button" class="button2" onclick ="myFunction2()" value ="copy to clipboard">
+              <input type="button" id ="copyclipboard" class="button2" onclick ="copyClipboard()"  value ="copy to clipboard">
               </div>
     </div>
   
