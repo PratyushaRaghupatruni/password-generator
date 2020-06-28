@@ -4,19 +4,22 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-  
+    min-height:50vh;
+    margin:0;
+   
 }
 .container{
-    background-color: #006699;
-    border-radius: 1rem;
+    background-color:wheat;
+    border-radius:1rem;
+    border:2px solid black;
     margin-left:30px;
     margin-right:30px;
-    padding:20px;
+    padding:3rem;
     display:flex;
     justify-content:center;
     align-items: center;
     flex-direction:column;
-   ;
+   
 }
 
 .title .heading2{
@@ -32,7 +35,7 @@ body{
 #pwd{
     background-color:white;
     border-radius: 1rem;
-    height:7rem;
+    height:9rem;
     width:600px;
     display:flex;
     justify-content: center;
@@ -48,14 +51,9 @@ body{
     padding:10px;
     cursor:pointer;
     margin-top:20px;
+    
 }
 
-.button1:hover{
-    background-color: thistle;
-}
-.button2:hover{
-    background-color: thistle;
-}
 @media screen and (max-width: 768px) { 
     .container{
         width:100%;
@@ -63,22 +61,18 @@ body{
         height:550px;
         font-size:xx-large;
     }
-    .buttons {
-        font-size: xx-large;
+    .title{
+        font-size: 35px;
+        text-align: center;
     }
-    
     #pwd{
-        font-size: large;
+        grid-column:span 2;
+        font-size:large;
         width:100%;
     }
-
-    .title {
-        margin-top:10px;
-    }
-    .heading2{
-        margin:top:15px;
-    }
-
-   
+ .button1,.button2{
+     display:flex;
+     justify-content: space-evenly;
+ }
         
      
