@@ -7,7 +7,7 @@ Deployed link:https://pratyusharaghupatruni.github.io/password-generator/
 Usage:
 Generating a Random Password when the user clicks generate Password.This is built using Javascript.
 
-![alt text]
+![alt text](https://github.com/PratyushaRaghupatruni/password-generator/blob/master/assets/Screen%20Shot%202020-06-28%20at%202.49.40%20PM.png)
 
 Instructions
 Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. The user will be prompted to choose from the following password criteria:
